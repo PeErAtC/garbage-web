@@ -1,0 +1,41 @@
+import React from 'react';
+import Sidebar from './components/sidebar'; // Import Sidebar Component จากโฟลเดอร์ components
+import Garbagerate from './Garbagerate'; // Import Main Content Component
+import styles from './main.module.css'; // เรียกใช้ไฟล์ CSS Modules
+
+const GarbageTable = () => {
+  return (
+    <div className="grid-container" style={{ backgroundColor : "white"}}>
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+      <div className={`${styles.container} main-content`}> 
+        <Garbagerate />
+      </div>
+      <style jsx>{`
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto 1fr; 
+        width: 100vw; /* ขยายเต็มความกว้างของหน้าจอ */
+        height: 100vh; /* ขยายเต็มความสูงของหน้าจอ */
+        background-color: white; /* ทำให้พื้นหลังเป็นสีขาว */
+      }
+      .sidebar {
+        position: fixed;
+        height: 100vh; /* ความสูงเต็มหน้าจอ */
+        top: 0; /* ด้านบนติดกับขอบหน้าจอ */
+        left: 0; /* ด้านซ้ายติดกับขอบหน้าจอ */
+        z-index: 1000; /* เพื่อให้ Sidebar อยู่บนสุดเมื่อมีการซ้อนทับกัน */
+      }
+      .main-content {
+        padding: 10px 28px;
+        margin-left: 290px; /* ปรับขนาดให้พอดีกับความกว้างของ Sidebar */
+        background-color: white; /* ทำให้พื้นหลังของ content เป็นสีขาว */
+        height: 100vh; /* ปรับความสูงเต็มหน้าจอ */
+      }
+    `}</style>
+    </div>
+  );
+};
+
+export default GarbageTable;

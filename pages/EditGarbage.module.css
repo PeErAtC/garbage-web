@@ -1,0 +1,51 @@
+.modalContainer {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .modalContent {
+    padding: 20px;
+  }
+  
+  .editButton,
+  .deleteButton,
+  .viewButton {
+    margin-right: 8px;
+  }
+  
+  .editButton {
+    background-color: #f1c40f;
+    color: #fff;
+  }
+  
+  .editButton:hover {
+    background-color: #d4ac0d;
+  }
+  
+  .deleteButton {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c0382c;
+  }
+  
+  .viewButton {
+    background-color: #3c6fe7;
+    color: #fff;
+  }
+  
+  .viewButton:hover {
+    background-color: #2c7bc0;
+  }
+  
+  .statusOpen {
+    color: green;
+  }
+  
+  .statusClosed {
+    color: red;
+  }
+  

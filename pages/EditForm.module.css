@@ -1,0 +1,59 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .fullWidthItem {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    height: 50%;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .select{
+    height: 80%;
+  }
+  
+  .submitButtonContainer {
+    text-align: center;
+  }
+  
+  .submitButton {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-left: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .submitButton:hover {
+    background-color: #218838;
+  }
+  

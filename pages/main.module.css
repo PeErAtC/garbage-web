@@ -1,0 +1,213 @@
+/* main.module.css */
+.user {
+  display: flex;
+  align-items: center;
+}
+.flexContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.container {
+  color: #656565; /* เปลี่ยนสีข้อความใน container เป็นสีดำ */
+  display: grid;
+  grid-template-columns: 1200px 1fr;
+  grid-template-rows: auto;
+
+}
+
+.addButton {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.addButton:hover {
+  background-color: #27ae60;
+}
+
+.table {
+  width: 1200px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: #000;
+  font-weight: 700;
+  text-align: left;
+}
+
+.table td {
+  border-top: 1px solid #ddd;
+}
+
+.tableHeader {
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+.editButton {
+  background-color: #f1c40f;
+  color: #fff;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  right: 7px;
+}
+
+.editButton:hover {
+  background-color: #d4ac0d;
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  right: 7px;
+}
+
+.deleteButton:hover {
+  background-color: #c0382c;
+}
+
+.viewButton {
+  background-color: #3c6fe7;
+  color: #fff;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  right: 7px;
+  width: 60px;
+}
+
+.viewButton:hover {
+  background-color: #2c7bc0;
+}
+
+.viewButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.addButton {
+  margin: 20px auto 16px; /* ขยับปุ่มมาอยู่ที่ล่างและกึ่งกลาง */
+  display: block; /* ทำให้ปุ่มเป็น block element เพื่อให้ margin auto ทำงานได้ */
+}
+
+.searchBar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}
+.container {
+  background-color: #fff; /* กำหนดพื้นหลังของเนื้อหาให้เป็นสีขาว */
+}
+.sidebar {
+  width: 300px;
+  background-color: #fff;
+  color: #000;
+  padding-top: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เปลี่ยนเงาของ sidebar */
+}
+.main {
+  background-color: #fff; /* กำหนดพื้นหลังของ main เป็นสีขาว */
+  grid-area: main; /* กำหนดพื้นที่ให้กับ main ใน grid */
+}
+.usersPage {
+  width: 100%;
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+.usersPage th,
+.usersPage td {
+  padding: 8px; /* Add some padding to table cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+}
+.highlight {
+  background-color: yellow;
+}
+
+
+/* main.module.css */
+.editButton,
+.deleteButton {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff; /* ปรับสีตัวหนังสือให้เป็นสีขาว */
+  padding: 10px 30px;
+  border-radius: 8%; /* มุมเป็นเหลี่ยมไม่มีโค้ง 5% */
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  cursor: pointer;
+  padding: 5px 15px; /* ปรับขนาดของปุ่มโดยเพิ่มหรือลดค่าของ padding ตามต้องการ */
+}
+
+.deleteButton {
+  background-color: crimson; /* สีแดง */
+}
+
+.editButton:hover,
+.deleteButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.editButton:active,
+.deleteButton:active {
+  transform: translateY(-3px);
+}
+
+.detailsButton {
+  background-color: #2861e6;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff; /* ปรับสีตัวหนังสือให้เป็นสีขาว */
+  padding: 10px 30px;
+  border-radius: 4px; /* มุมเป็นเหลี่ยมไม่มีโค้ง 5% */
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  cursor: pointer;
+  padding: 5px 15px; /* ปรับขนาดของปุ่มโดยเพิ่มหรือลดค่าของ padding ตามต้องการ */
+  border: none;
+}
+
+.detailsButton{
+  background-color: #2c7bc0; /* สีพื้นหลัง */
+}
+
+.detailsButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.statusOpen {
+  color: green;
+}
+
+.statusClosed {
+  color: red;
+}
